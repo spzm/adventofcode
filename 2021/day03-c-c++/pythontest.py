@@ -11,7 +11,7 @@ def part2(data, p):
     return int(''.join(data[0]), 2)
 
 if __name__ == '__main__':
-    with open('./data.txt') as f:
+    with open('data.txt') as f:
         data = [[bit for bit in bits] for bits in list(f.read().split())]
 
     print('power:', part1(data, 0) * part1(data, -1))
