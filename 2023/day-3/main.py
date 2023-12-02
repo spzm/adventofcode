@@ -34,6 +34,8 @@ def task1(file_name: str):
 
     data = process_lines(lines)
 
+    print(data)
+
     possible_games = []
     for i, game in enumerate(data):
         success = True
@@ -86,5 +88,5 @@ if __name__ == "__main__":
         sys.exit()
 
     print('Processing results for path: {}'.format(path))
-    print('Task 1: {}'.format(task1(path)))
+    # print('Task 1: {}'.format(task1(path)))
     print('Task 2: {}'.format(task2(path)))
